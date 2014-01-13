@@ -2,11 +2,14 @@ package helper;
 
 import java.math.BigInteger;
 
-public class Utilities {
+public abstract class Utilities {
 
+	private static long increase = 0;
+	
 	public static BigInteger getID() {
-
-		return BigInteger.valueOf(System.currentTimeMillis());
+		
+		increase += 1;
+		BigInteger id = BigInteger.valueOf(System.currentTimeMillis() + increase);
+		return id;
 	}
-
 }
