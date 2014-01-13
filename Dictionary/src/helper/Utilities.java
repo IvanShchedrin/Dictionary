@@ -2,7 +2,7 @@ package helper;
 
 import java.math.BigInteger;
 
-public abstract class Utilities {
+public class Utilities {
 
 	private static long increase = 0;
 	
