@@ -81,6 +81,31 @@ public class MemoryDAO implements DAO {
 		}
 		return null;
 	}
+
+	@Override
+	public Word getWordByName(String name) {
+		
+		Set<Map.Entry<BigInteger, Word>> set = words.entrySet();
+		for (Map.Entry<BigInteger, Word> me : set) {
+			if (me.getValue().getTransWord().equals(name)) {
+				return me.getValue();
+			}
+		}
+		return null;
+	}
+
+	@Override
+	public Language getLangByNumber(int numb) {
+		
+		Set<Map.Entry<BigInteger, Language>> set = languages.entrySet();
+		for (Map.Entry<BigInteger, Language> me : set) {
+			if (me.getValue().getLangID().equals(numb)) {
+				return me.getValue();
+			}
+		}
+		return null;
+	}
+
 	
 	
 }

@@ -14,7 +14,7 @@ public class Language extends Entity {
 		this.lang = lang;
 	}
 
-	public int getLangID() {
+	public Integer getLangID() {
 		return lang;
 	}
 	

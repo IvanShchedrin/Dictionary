@@ -45,7 +45,6 @@ public class Sample {
 		
 		System.out.print("\nИмя юзера: ");
 		String name = in.next();
-		dao.getUserByName(name);
 		System.out.println("\n" + dao.getUserByName(name).toString());
 	}
 	
@@ -77,7 +76,7 @@ public class Sample {
 		}
 	}
 
-	public void smallSample() {
+	public static void main(String[] a) {
 		
 		String key = null;
 		while (key != "q") {
